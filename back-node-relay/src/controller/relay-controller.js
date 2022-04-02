@@ -1,15 +1,15 @@
 class RelayController {
   constructor(five) {
     this.five = five;
-    this.relay = new five.Relay(10, "NC");
+    this.relay = new five.Relay(10, "NC", false);
   }
   changeStateRelay(state) {
     if (state) {
       this.relay.close();
-      return this.relay.isOn;
+      return true;
     } else {
       this.relay.open();
-      return this.relay.isOn;
+      return false;
     }
   }
 }

@@ -16,7 +16,7 @@ export default {
           },
         });
         const data = await response.json();
-        state.value = data.active;
+        state.value = data.status;
       } catch (error) {
         console.log(error);
       }
@@ -32,8 +32,8 @@ export default {
 
 <template>
   <div class="container">
-    <h1>
-      <strong>Relay:</strong> {{ state == true ? "Encendido" : "Apagado" }}
+    <h1 v-bind:class="state === false ? 'red' : 'green'">
+      <strong>Estado:</strong> {{ state === true ? "Encendido" : "Apagado" }}
     </h1>
     <button class="btn btn-green" @click="handleRelay(true)">Encender</button>
     <button class="btn btn-red" @click="handleRelay(false)">Apagar</button>
@@ -46,12 +46,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background-color: #2c3e50;
+  background-color: #1c1b20;
   display: flex;
   height: 90vh;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  text-align: center;
 }
 
 .btn {
@@ -60,23 +64,26 @@ export default {
   padding: 10px;
   margin: 5px;
   color: white;
-}
-
-.container {
-  text-align: center;
+  font-weight: bold;
 }
 
 .btn-red {
-  background-color: red;
+  background-color: #cb3541;
 }
 
 .btn-green {
-  background-color: green;
+  background-color: rgb(14, 140, 14);
 }
 
 .btn:hover {
   cursor: pointer;
   background-color: white;
   color: black;
+}
+.red {
+  color: #cb3541;
+}
+.green {
+  color: rgb(14, 140, 14);
 }
 </style>
