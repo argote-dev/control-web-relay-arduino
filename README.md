@@ -1,4 +1,4 @@
-# control-web-relay-arduino
+# Controlador web para Relé
 Proyecto de aprendizaje, se trata se una aplicación para controlar un Relé desde una interfaz web.
 
 # Arquitectura
