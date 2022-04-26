@@ -13,6 +13,10 @@ Proyecto de aprendizaje, se trata se una aplicación para controlar un Relé des
 - Backend: Javascript (Node.js, express, johnny-five)
 - Frontend: Javascript (Vue.js)
 
+# Circuito para el Relé
+
+![](http://johnny-five.io/img/breadboard/relay-open.png)
+
 # Nota:
 En las respectivas carpetas podrás ver los comando que se necesitan para correr ambos proyectos y una, guía de como se desarrolló y como puede llegar a mejorarse.
 
