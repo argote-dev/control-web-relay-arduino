@@ -1,7 +1,25 @@
-# Vue 3 + Vite
+# Interfaz web
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+*Instalar Node.js,*
+[Descargar Node.js](https://nodejs.org/es/)
 
-## Recommended IDE Setup
+*Instalar Vue.js 3,*
+[Descargar Vue.js 3](https://vuejs.org/guide/quick-start.html)
 
+*Instalar Vite,*
+[Descargar Vite](https://vitejs.dev/guide/#trying-vite-online)
+
+# Ejecutar proyecto
+#### Ejecutar el proyecto:
+```
+npm install
+```
+#### Ejecutar el proyecto:
+```
+npm run dev
+```
+# Nota:
+Obligatoriamente, Node.js y npm deben estar instalados en el computador desde el cual se va a ejecutar el sistema
+
+## IDE Recomendado
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
